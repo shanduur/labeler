@@ -1,0 +1,734 @@
+¯\_(ツ)_/¯:
+    name: ¯\_(ツ)_/¯
+    color: f9d0c4
+    description: ¯\\\_(ツ)_/¯
+api-review:
+    name: api-review
+    color: e11d21
+    description: Categorizes an issue or PR as actively needing an API review.
+approved:
+    name: approved
+    color: 0ffa16
+    description: Indicates a PR has been approved by an approver from all required OWNERS files.
+area/HA:
+    name: area/HA
+    color: 0052cc
+area/admin:
+    name: area/admin
+    color: 0052cc
+    description: Indicates an issue on admin area.
+area/admission-control:
+    name: area/admission-control
+    color: 0052cc
+area/api:
+    name: area/api
+    color: 0052cc
+    description: Indicates an issue on api area.
+area/apiserver:
+    name: area/apiserver
+    color: 0052cc
+area/app-lifecycle:
+    name: area/app-lifecycle
+    color: 0052cc
+area/artifacts:
+    name: area/artifacts
+    color: 0052cc
+    description: Issues or PRs related to the hosting of release artifacts for subprojects
+area/audit:
+    name: area/audit
+    color: 0052cc
+area/batch:
+    name: area/batch
+    color: 0052cc
+area/build-release:
+    name: area/build-release
+    color: 0052cc
+area/cadvisor:
+    name: area/cadvisor
+    color: 0052cc
+area/client-libraries:
+    name: area/client-libraries
+    color: 0052cc
+area/cloudprovider:
+    name: area/cloudprovider
+    color: 0052cc
+area/code-generation:
+    name: area/code-generation
+    color: 0052cc
+    description: ""
+area/code-organization:
+    name: area/code-organization
+    color: 0052cc
+    description: Issues or PRs related to kubernetes code organization
+area/community-meeting:
+    name: area/community-meeting
+    color: 0052cc
+    description: Issues or PRs that should potentially be discussed in a Kubernetes community meeting.
+area/configmap-api:
+    name: area/configmap-api
+    color: 0052cc
+area/conformance:
+    name: area/conformance
+    color: 0052cc
+    description: Issues or PRs related to kubernetes conformance tests
+area/controller-manager:
+    name: area/controller-manager
+    color: 0052cc
+area/custom-resources:
+    name: area/custom-resources
+    color: 0052cc
+area/declarative-configuration:
+    name: area/declarative-configuration
+    color: 0052cc
+area/deflake:
+    name: area/deflake
+    color: 0052cc
+    description: Issues or PRs related to deflaking kubernetes tests
+area/dependency:
+    name: area/dependency
+    color: 0052cc
+    description: Issues or PRs related to dependency changes
+area/dns:
+    name: area/dns
+    color: 0052cc
+area/docker:
+    name: area/docker
+    color: 0052cc
+area/downward-api:
+    name: area/downward-api
+    color: 0052cc
+area/e2e-test-framework:
+    name: area/e2e-test-framework
+    color: 0052cc
+    description: Issues or PRs related to refactoring the kubernetes e2e test framework
+area/ecosystem:
+    name: area/ecosystem
+    color: 0052cc
+area/etcd:
+    name: area/etcd
+    color: 0052cc
+area/example:
+    name: area/example
+    color: 0052cc
+area/example/cassandra:
+    name: area/example/cassandra
+    color: 0052cc
+area/extensibility:
+    name: area/extensibility
+    color: 0052cc
+area/federation:
+    name: area/federation
+    color: 0052cc
+area/hw-accelerators:
+    name: area/hw-accelerators
+    color: 0052cc
+area/images-registry:
+    name: area/images-registry
+    color: 0052cc
+area/ingress:
+    name: area/ingress
+    color: 0052cc
+area/introspection:
+    name: area/introspection
+    color: 0052cc
+area/ipv6:
+    name: area/ipv6
+    color: 0052cc
+area/ipvs:
+    name: area/ipvs
+    color: 0052cc
+area/isolation:
+    name: area/isolation
+    color: 0052cc
+area/kube-proxy:
+    name: area/kube-proxy
+    color: 0052cc
+area/kubeadm:
+    name: area/kubeadm
+    color: 0052cc
+area/kubectl:
+    name: area/kubectl
+    color: 0052cc
+area/kubelet:
+    name: area/kubelet
+    color: 0052cc
+area/kubelet-api:
+    name: area/kubelet-api
+    color: 0052cc
+area/logging:
+    name: area/logging
+    color: 0052cc
+area/monitoring:
+    name: area/monitoring
+    color: 0052cc
+area/network-policy:
+    name: area/network-policy
+    color: 0052cc
+    description: Issues or PRs related to Network Policy subproject
+area/node-e2e:
+    name: area/node-e2e
+    color: 0052cc
+area/node-lifecycle:
+    name: area/node-lifecycle
+    color: 0052cc
+area/nodecontroller:
+    name: area/nodecontroller
+    color: 0052cc
+area/os/coreos:
+    name: area/os/coreos
+    color: d4c5f9
+area/os/fedora:
+    name: area/os/fedora
+    color: d4c5f9
+area/os/ubuntu:
+    name: area/os/ubuntu
+    color: d4c5f9
+area/platform/gce:
+    name: area/platform/gce
+    color: d4c5f9
+area/platform/mesos:
+    name: area/platform/mesos
+    color: d4c5f9
+area/platform/vagrant:
+    name: area/platform/vagrant
+    color: d4c5f9
+area/provider/aws:
+    name: area/provider/aws
+    color: 0052cc
+    description: Issues or PRs related to aws provider
+area/provider/azure:
+    name: area/provider/azure
+    color: 0052cc
+    description: Issues or PRs related to azure provider
+area/provider/digitalocean:
+    name: area/provider/digitalocean
+    color: 0052cc
+    description: Issues or PRs related to digitalocean provider
+area/provider/gcp:
+    name: area/provider/gcp
+    color: 0052cc
+    description: Issues or PRs related to gcp provider
+area/provider/ibmcloud:
+    name: area/provider/ibmcloud
+    color: 0052cc
+    description: Issues or PRs related to ibmcloud provider
+area/provider/openstack:
+    name: area/provider/openstack
+    color: 0052cc
+    description: Issues or PRs related to openstack provider
+area/provider/vmware:
+    name: area/provider/vmware
+    color: 0052cc
+    description: Issues or PRs related to vmware provider
+area/release-eng:
+    name: area/release-eng
+    color: 0052cc
+    description: Issues or PRs related to the Release Engineering subproject
+area/reliability:
+    name: area/reliability
+    color: 0052cc
+area/rkt:
+    name: area/rkt
+    color: 0052cc
+area/secret-api:
+    name: area/secret-api
+    color: 0052cc
+area/security:
+    name: area/security
+    color: d93f0b
+area/stable-metrics:
+    name: area/stable-metrics
+    color: 0052cc
+    description: Issues or PRs involving stable metrics
+area/stateful-apps:
+    name: area/stateful-apps
+    color: 0052cc
+area/swagger:
+    name: area/swagger
+    color: 0052cc
+area/system-requirement:
+    name: area/system-requirement
+    color: 0052cc
+area/teardown:
+    name: area/teardown
+    color: 0052cc
+area/test:
+    name: area/test
+    color: 0052cc
+area/test-infra:
+    name: area/test-infra
+    color: 0052cc
+area/ui:
+    name: area/ui
+    color: 0052cc
+area/upgrade:
+    name: area/upgrade
+    color: 0052cc
+area/usability:
+    name: area/usability
+    color: 0052cc
+area/workload-api/cronjob:
+    name: area/workload-api/cronjob
+    color: 0052cc
+area/workload-api/daemonset:
+    name: area/workload-api/daemonset
+    color: 0052cc
+area/workload-api/deployment:
+    name: area/workload-api/deployment
+    color: 0052cc
+area/workload-api/job:
+    name: area/workload-api/job
+    color: 0052cc
+area/workload-api/replicaset:
+    name: area/workload-api/replicaset
+    color: 0052cc
+cherry-pick-approved:
+    name: cherry-pick-approved
+    color: fef2c0
+    description: Indicates a cherry-pick PR into a release branch has been approved by the release branch manager.
+'cncf-cla: no':
+    name: 'cncf-cla: no'
+    color: e11d21
+    description: Indicates the PR's author has not signed the CNCF CLA.
+'cncf-cla: yes':
+    name: 'cncf-cla: yes'
+    color: bfe5bf
+    description: Indicates the PR's author has signed the CNCF CLA.
+committee/code-of-conduct:
+    name: committee/code-of-conduct
+    color: c0ff4a
+    description: Denotes an issue or PR intended to be handled by the code of conduct committee.
+committee/security-response:
+    name: committee/security-response
+    color: c0ff4a
+    description: Denotes an issue or PR intended to be handled by the product security committee.
+committee/steering:
+    name: committee/steering
+    color: c0ff4a
+    description: Denotes an issue or PR intended to be handled by the steering committee.
+dependencies:
+    name: dependencies
+    color: 0366d6
+    description: Pull requests that update a dependency file
+do-not-merge:
+    name: do-not-merge
+    color: e11d21
+    description: DEPRECATED. Indicates that a PR should not merge. Label can only be manually applied/removed.
+do-not-merge/blocked-paths:
+    name: do-not-merge/blocked-paths
+    color: e11d21
+    description: Indicates that a PR should not merge because it touches files in blocked paths.
+do-not-merge/cherry-pick-not-approved:
+    name: do-not-merge/cherry-pick-not-approved
+    color: e11d21
+    description: Indicates that a PR is not yet approved to merge into a release branch.
+do-not-merge/contains-merge-commits:
+    name: do-not-merge/contains-merge-commits
+    color: e11d21
+    description: Indicates a PR which contains merge commits.
+do-not-merge/hold:
+    name: do-not-merge/hold
+    color: e11d21
+    description: Indicates that a PR should not merge because someone has issued a /hold command.
+do-not-merge/invalid-commit-message:
+    name: do-not-merge/invalid-commit-message
+    color: e11d21
+    description: Indicates that a PR should not merge because it has an invalid commit message.
+do-not-merge/invalid-owners-file:
+    name: do-not-merge/invalid-owners-file
+    color: e11d21
+    description: Indicates that a PR should not merge because it has an invalid OWNERS file in it.
+do-not-merge/needs-kind:
+    name: do-not-merge/needs-kind
+    color: e11d21
+    description: Indicates a PR lacks a `kind/foo` label and requires one.
+do-not-merge/needs-sig:
+    name: do-not-merge/needs-sig
+    color: e11d21
+    description: Indicates an issue or PR lacks a `sig/foo` label and requires one.
+do-not-merge/release-note-label-needed:
+    name: do-not-merge/release-note-label-needed
+    color: e11d21
+    description: Indicates that a PR should not merge because it's missing one of the release note labels.
+do-not-merge/work-in-progress:
+    name: do-not-merge/work-in-progress
+    color: e11d21
+    description: Indicates that a PR should not merge because it is a work in progress.
+good first issue:
+    name: good first issue
+    color: 7057ff
+    description: Denotes an issue ready for a new contributor, according to the "help wanted" guidelines.
+help wanted:
+    name: help wanted
+    color: 006b75
+    description: Denotes an issue that needs help from a contributor. Must meet "help wanted" guidelines.
+kind/api-change:
+    name: kind/api-change
+    color: e11d21
+    description: Categorizes issue or PR as related to adding, removing, or otherwise changing an API
+kind/bug:
+    name: kind/bug
+    color: e11d21
+    description: Categorizes issue or PR as related to a bug.
+kind/cleanup:
+    name: kind/cleanup
+    color: c7def8
+    description: Categorizes issue or PR as related to cleaning up code, process, or technical debt.
+kind/deprecation:
+    name: kind/deprecation
+    color: e11d21
+    description: Categorizes issue or PR as related to a feature/enhancement marked for deprecation.
+kind/design:
+    name: kind/design
+    color: c7def8
+    description: Categorizes issue or PR as related to design.
+kind/documentation:
+    name: kind/documentation
+    color: c7def8
+    description: Categorizes issue or PR as related to documentation.
+kind/failing-test:
+    name: kind/failing-test
+    color: e11d21
+    description: Categorizes issue or PR as related to a consistently or frequently failing test.
+kind/feature:
+    name: kind/feature
+    color: c7def8
+    description: Categorizes issue or PR as related to a new feature.
+kind/flake:
+    name: kind/flake
+    color: f7c6c7
+    description: Categorizes issue or PR as related to a flaky test.
+kind/regression:
+    name: kind/regression
+    color: e11d21
+    description: Categorizes issue or PR as related to a regression from a prior release.
+kind/support:
+    name: kind/support
+    color: d455d0
+    description: Categorizes issue or PR as a support question.
+lgtm:
+    name: lgtm
+    color: 15dd18
+    description: Indicates that a PR is ready to be merged.
+lifecycle/active:
+    name: lifecycle/active
+    color: 8fc951
+    description: Indicates that an issue or PR is actively being worked on by a contributor.
+lifecycle/frozen:
+    name: lifecycle/frozen
+    color: d3e2f0
+    description: Indicates that an issue or PR should not be auto-closed due to staleness.
+lifecycle/rotten:
+    name: lifecycle/rotten
+    color: "604460"
+    description: Denotes an issue or PR that has aged beyond stale and will be auto-closed.
+lifecycle/stale:
+    name: lifecycle/stale
+    color: "795548"
+    description: Denotes an issue or PR has remained open with no activity and has become stale.
+milestone/incomplete-labels:
+    name: milestone/incomplete-labels
+    color: ededed
+milestone/needs-approval:
+    name: milestone/needs-approval
+    color: ededed
+milestone/needs-attention:
+    name: milestone/needs-attention
+    color: ededed
+milestone/removed:
+    name: milestone/removed
+    color: ededed
+needs-kind:
+    name: needs-kind
+    color: ededed
+    description: Indicates a PR lacks a `kind/foo` label and requires one.
+needs-ok-to-test:
+    name: needs-ok-to-test
+    color: b60205
+    description: Indicates a PR that requires an org member to verify it is safe to test.
+needs-priority:
+    name: needs-priority
+    color: ededed
+    description: Indicates a PR lacks a `priority/foo` label and requires one.
+needs-rebase:
+    name: needs-rebase
+    color: e11d21
+    description: Indicates a PR cannot be merged because it has merge conflicts with HEAD.
+needs-sig:
+    name: needs-sig
+    color: ededed
+    description: Indicates an issue or PR lacks a `sig/foo` label and requires one.
+needs-triage:
+    name: needs-triage
+    color: ededed
+    description: Indicates an issue or PR lacks a `triage/foo` label and requires one.
+official-cve-feed:
+    name: official-cve-feed
+    color: 0052cc
+    description: Issues or PRs related to CVEs officially announced by Security Response Committee (SRC)
+ok-to-test:
+    name: ok-to-test
+    color: 15dd18
+    description: Indicates a non-member PR verified by an org member that is safe to test.
+priority/awaiting-more-evidence:
+    name: priority/awaiting-more-evidence
+    color: fef2c0
+    description: Lowest priority. Possibly useful, but not yet enough support to actually get it done.
+priority/backlog:
+    name: priority/backlog
+    color: fbca04
+    description: Higher priority than priority/awaiting-more-evidence.
+priority/critical-urgent:
+    name: priority/critical-urgent
+    color: e11d21
+    description: Highest priority. Must be actively worked on as someone's top priority right now.
+priority/important-longterm:
+    name: priority/important-longterm
+    color: eb6420
+    description: Important over the long term, but may not be staffed and/or may need multiple releases to complete.
+priority/important-soon:
+    name: priority/important-soon
+    color: eb6420
+    description: Must be staffed and worked on either currently, or very soon, ideally in time for the next release.
+release-blocker:
+    name: release-blocker
+    color: d93f0b
+release-note:
+    name: release-note
+    color: c2e0c6
+    description: Denotes a PR that will be considered when it comes time to generate release notes.
+release-note-action-required:
+    name: release-note-action-required
+    color: c2e0c6
+    description: Denotes a PR that introduces potentially breaking changes that require user action.
+release-note-none:
+    name: release-note-none
+    color: c2e0c6
+    description: Denotes a PR that doesn't merit a release note.
+sig/api-machinery:
+    name: sig/api-machinery
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG API Machinery.
+sig/apps:
+    name: sig/apps
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Apps.
+sig/architecture:
+    name: sig/architecture
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Architecture.
+sig/auth:
+    name: sig/auth
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Auth.
+sig/autoscaling:
+    name: sig/autoscaling
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Autoscaling.
+sig/cli:
+    name: sig/cli
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG CLI.
+sig/cloud-provider:
+    name: sig/cloud-provider
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Cloud Provider.
+sig/cluster-lifecycle:
+    name: sig/cluster-lifecycle
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Cluster Lifecycle.
+sig/contributor-experience:
+    name: sig/contributor-experience
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Contributor Experience.
+sig/docs:
+    name: sig/docs
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Docs.
+sig/instrumentation:
+    name: sig/instrumentation
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Instrumentation.
+sig/k8s-infra:
+    name: sig/k8s-infra
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG K8s Infra.
+sig/multicluster:
+    name: sig/multicluster
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Multicluster.
+sig/network:
+    name: sig/network
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Network.
+sig/node:
+    name: sig/node
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Node.
+sig/release:
+    name: sig/release
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Release.
+sig/scalability:
+    name: sig/scalability
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Scalability.
+sig/scheduling:
+    name: sig/scheduling
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Scheduling.
+sig/security:
+    name: sig/security
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Security.
+sig/service-catalog:
+    name: sig/service-catalog
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Service Catalog.
+sig/storage:
+    name: sig/storage
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Storage.
+sig/testing:
+    name: sig/testing
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Testing.
+sig/ui:
+    name: sig/ui
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG UI.
+sig/usability:
+    name: sig/usability
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Usability.
+sig/windows:
+    name: sig/windows
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to SIG Windows.
+size/L:
+    name: size/L
+    color: ee9900
+    description: Denotes a PR that changes 100-499 lines, ignoring generated files.
+size/M:
+    name: size/M
+    color: eebb00
+    description: Denotes a PR that changes 30-99 lines, ignoring generated files.
+size/S:
+    name: size/S
+    color: 77bb00
+    description: Denotes a PR that changes 10-29 lines, ignoring generated files.
+size/XL:
+    name: size/XL
+    color: ee5500
+    description: Denotes a PR that changes 500-999 lines, ignoring generated files.
+size/XS:
+    name: size/XS
+    color: "009900"
+    description: Denotes a PR that changes 0-9 lines, ignoring generated files.
+size/XXL:
+    name: size/XXL
+    color: ee0000
+    description: Denotes a PR that changes 1000+ lines, ignoring generated files.
+status/approved-for-milestone:
+    name: status/approved-for-milestone
+    color: ededed
+tide/merge-blocker:
+    name: tide/merge-blocker
+    color: e11d21
+    description: Denotes an issue that blocks the tide merge queue for a branch while it is open.
+tide/merge-method-merge:
+    name: tide/merge-method-merge
+    color: ffaa00
+    description: Denotes a PR that should use a standard merge by tide when it merges.
+tide/merge-method-rebase:
+    name: tide/merge-method-rebase
+    color: ffaa00
+    description: Denotes a PR that should be rebased by tide when it merges.
+tide/merge-method-squash:
+    name: tide/merge-method-squash
+    color: ffaa00
+    description: Denotes a PR that should be squashed by tide when it merges.
+triage/accepted:
+    name: triage/accepted
+    color: 8fc951
+    description: Indicates an issue or PR is ready to be actively worked on.
+triage/duplicate:
+    name: triage/duplicate
+    color: d455d0
+    description: Indicates an issue is a duplicate of other open issue.
+triage/needs-information:
+    name: triage/needs-information
+    color: d455d0
+    description: Indicates an issue needs more information in order to work on it.
+triage/not-reproducible:
+    name: triage/not-reproducible
+    color: d455d0
+    description: Indicates an issue can not be reproduced as described.
+triage/unresolved:
+    name: triage/unresolved
+    color: d455d0
+    description: Indicates an issue that can not or will not be resolved.
+ug/big-data:
+    name: ug/big-data
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to ug-big-data.
+ug/vmware:
+    name: ug/vmware
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to ug-vmware.
+wg/api-expression:
+    name: wg/api-expression
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG API Expression.
+wg/batch:
+    name: wg/batch
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG Batch.
+wg/cluster-api:
+    name: wg/cluster-api
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to wg-cluster-api.
+wg/component-standard:
+    name: wg/component-standard
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG Component Standard.
+wg/data-protection:
+    name: wg/data-protection
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG Data Protection.
+wg/iot-edge:
+    name: wg/iot-edge
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG IOT Edge.
+wg/lts:
+    name: wg/lts
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG LTS.
+wg/machine-learning:
+    name: wg/machine-learning
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG Machine Learning.
+wg/multitenancy:
+    name: wg/multitenancy
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG Multitenancy.
+wg/naming:
+    name: wg/naming
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG Naming.
+wg/policy:
+    name: wg/policy
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG Policy.
+wg/reliability:
+    name: wg/reliability
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG Reliability
+wg/security-audit:
+    name: wg/security-audit
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG Security Audit.
+wg/structured-logging:
+    name: wg/structured-logging
+    color: d2b48c
+    description: Categorizes an issue or PR as relevant to WG Structured Logging.

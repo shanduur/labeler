@@ -1,0 +1,21 @@
+name: Upload labels
+
+on:
+  push:
+    branches:
+      - "main"
+
+permissions: write-all
+
+jobs:
+  upload-labels:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-go@v4
+      with:
+        go-version: '1.20'
+    - run: go install github.com/shanduur/labeler/cmd/labeler@main
+    - run: labeler upload --owner shanduur --repo labeler ./.github/labels.yaml
+      env:
+        GITHUB_TOKEN: ${{ secrets.LABELER_TOKEN }}
