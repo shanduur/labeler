@@ -1,0 +1,469 @@
+area/api:
+    name: area/api
+    color: fbca04
+area/builder:
+    name: area/builder
+    color: fbca04
+area/builder/buildkit:
+    name: area/builder/buildkit
+    color: fbca04
+    description: Issues affecting buildkit
+area/builder/classic-builder:
+    name: area/builder/classic-builder
+    color: fbca04
+    description: Issues affecting the classic builder
+area/cgroup2:
+    name: area/cgroup2
+    color: fbca04
+    description: cgroup v2
+area/cli:
+    name: area/cli
+    color: fbca04
+area/contrib:
+    name: area/contrib
+    color: fbca04
+    description: ""
+area/daemon:
+    name: area/daemon
+    color: fbca04
+area/distribution:
+    name: area/distribution
+    color: fbca04
+area/docs:
+    name: area/docs
+    color: fbca04
+area/images:
+    name: area/images
+    color: fbca04
+area/kernel:
+    name: area/kernel
+    color: fbca04
+area/lcow:
+    name: area/lcow
+    color: fbca04
+    description: Issues and PR's related to the experimental LCOW feature
+area/logging:
+    name: area/logging
+    color: fbca04
+area/networking:
+    name: area/networking
+    color: fbca04
+area/networking/d/bridge:
+    name: area/networking/d/bridge
+    color: FBCA04
+    description: ""
+area/networking/d/ipvlan:
+    name: area/networking/d/ipvlan
+    color: FBCA04
+    description: ""
+area/networking/d/macvlan:
+    name: area/networking/d/macvlan
+    color: FBCA04
+    description: ""
+area/networking/d/overlay:
+    name: area/networking/d/overlay
+    color: fbcA04
+    description: ""
+area/networking/dns:
+    name: area/networking/dns
+    color: FBCA04
+    description: ""
+area/networking/firewalld:
+    name: area/networking/firewalld
+    color: FBCA04
+    description: ""
+area/networking/firewalling:
+    name: area/networking/firewalling
+    color: fbca04
+    description: ""
+area/networking/ipam:
+    name: area/networking/ipam
+    color: FBCA04
+    description: ""
+area/networking/ipv6:
+    name: area/networking/ipv6
+    color: fbca04
+    description: Issues related to ipv6
+area/networking/portmapping:
+    name: area/networking/portmapping
+    color: FBCA04
+    description: ""
+area/networking/proxy:
+    name: area/networking/proxy
+    color: fbca04
+    description: ""
+area/networking/tc:
+    name: area/networking/tc
+    color: FBCA04
+    description: ""
+area/packaging:
+    name: area/packaging
+    color: fbca04
+    description: ""
+area/performance:
+    name: area/performance
+    color: fbca04
+    description: ""
+area/plugins:
+    name: area/plugins
+    color: fbca04
+area/project:
+    name: area/project
+    color: fbca04
+area/rootless:
+    name: area/rootless
+    color: fbca04
+    description: Rootless mode
+area/runtime:
+    name: area/runtime
+    color: fbca04
+area/security:
+    name: area/security
+    color: fbca04
+area/security/apparmor:
+    name: area/security/apparmor
+    color: fbca04
+area/security/seccomp:
+    name: area/security/seccomp
+    color: fbca04
+area/security/selinux:
+    name: area/security/selinux
+    color: fbca04
+area/security/trust:
+    name: area/security/trust
+    color: fbca04
+area/security/userns:
+    name: area/security/userns
+    color: fbca04
+area/stack:
+    name: area/stack
+    color: fbca04
+    description: ""
+area/storage:
+    name: area/storage
+    color: FBCA04
+area/storage/aufs:
+    name: area/storage/aufs
+    color: fbca04
+area/storage/btrfs:
+    name: area/storage/btrfs
+    color: fbca04
+area/storage/devicemapper:
+    name: area/storage/devicemapper
+    color: FBCA04
+area/storage/overlay:
+    name: area/storage/overlay
+    color: fbca04
+area/storage/zfs:
+    name: area/storage/zfs
+    color: fbca04
+area/swarm:
+    name: area/swarm
+    color: fbca04
+area/systemd:
+    name: area/systemd
+    color: fbca04
+area/testing:
+    name: area/testing
+    color: fbca04
+area/ux:
+    name: area/ux
+    color: fbca04
+    description: ""
+area/volumes:
+    name: area/volumes
+    color: fbca04
+containerd-integration:
+    name: containerd-integration
+    color: 586FE8
+    description: Issues and PRs related to containerd integration
+dco/no:
+    name: dco/no
+    color: f7c6c7
+    description: Automatically set by a bot when one of the commits lacks proper signature
+docs/revisit:
+    name: docs/revisit
+    color: "000000"
+exp/beginner:
+    name: exp/beginner
+    color: 3B8686
+exp/expert:
+    name: exp/expert
+    color: 3B8686
+exp/intermediate:
+    name: exp/intermediate
+    color: 3B8686
+impact/api:
+    name: impact/api
+    color: bfe5bf
+impact/changelog:
+    name: impact/changelog
+    color: bfe5bf
+impact/cli:
+    name: impact/cli
+    color: bfe5bf
+impact/deprecation:
+    name: impact/deprecation
+    color: bfe5bf
+impact/dockerfile:
+    name: impact/dockerfile
+    color: bfe5bf
+impact/documentation:
+    name: impact/documentation
+    color: bfe5bf
+invalid:
+    name: invalid
+    color: ededed
+kind/bug:
+    name: kind/bug
+    color: FF8C94
+    description: Bugs are bugs. The cause may or may not be known at triage time so debugging may be needed.
+kind/bugfix:
+    name: kind/bugfix
+    color: d9faea
+    description: PR's that fix bugs
+kind/duplicate:
+    name: kind/duplicate
+    color: "808919"
+    description: ""
+kind/enhancement:
+    name: kind/enhancement
+    color: E8CAAF
+    description: Enhancements are not bugs or new features but can improve usability or performance.
+kind/epic:
+    name: kind/epic
+    color: F212F9
+    description: Epics to track work on related tickets
+kind/experimental:
+    name: kind/experimental
+    color: bfdadc
+kind/feature:
+    name: kind/feature
+    color: AAB3AB
+    description: Functionality or other elements that the project doesn't currently have. Features are new and shiny
+kind/question:
+    name: kind/question
+    color: EBEFC9
+kind/refactor:
+    name: kind/refactor
+    color: d9faea
+    description: PR's that refactor, or clean-up code
+kind/regression:
+    name: kind/regression
+    color: FF8C94
+    description: ""
+platform/arm:
+    name: platform/arm
+    color: F6FBFF
+platform/desktop:
+    name: platform/desktop
+    color: F6FBFF
+platform/freebsd:
+    name: platform/freebsd
+    color: F6FBFF
+platform/ibm-power:
+    name: platform/ibm-power
+    color: F6FBFF
+platform/ibm-z:
+    name: platform/ibm-z
+    color: F6FBFF
+platform/mac:
+    name: platform/mac
+    color: F6FBFF
+platform/windows:
+    name: platform/windows
+    color: F6FBFF
+priority/P0:
+    name: priority/P0
+    color: e11d21
+    description: 'Urgent: Security, critical bugs, blocking issues. drop everything until this issue is addressed.'
+priority/P1:
+    name: priority/P1
+    color: eb6420
+    description: 'Important: P1 issues are a top priority and a must-have for the next release.'
+priority/P2:
+    name: priority/P2
+    color: fad8c7
+    description: 'Normal priority: default priority applied.'
+priority/P3:
+    name: priority/P3
+    color: fef2c0
+    description: 'Best effort: those are nice to have / minor issues.'
+process/cherry-pick:
+    name: process/cherry-pick
+    color: a98bf3
+process/cherry-pick/20.10:
+    name: process/cherry-pick/20.10
+    color: a98bf3
+    description: ""
+process/cherry-pick/23.0:
+    name: process/cherry-pick/23.0
+    color: a98bf3
+    description: ""
+process/cherry-picked:
+    name: process/cherry-picked
+    color: bfe5bf
+process/merged-to-master:
+    name: process/merged-to-master
+    color: bfe5bf
+roadmap:
+    name: roadmap
+    color: eb6420
+status/0-triage:
+    name: status/0-triage
+    color: EEEEEE
+    description: ""
+status/1-design-review:
+    name: status/1-design-review
+    color: fef2c0
+    description: ""
+status/2-code-review:
+    name: status/2-code-review
+    color: fad8c7
+status/3-docs-review:
+    name: status/3-docs-review
+    color: c7def8
+status/4-merge:
+    name: status/4-merge
+    color: d4c5f9
+status/accepted:
+    name: status/accepted
+    color: c2e0c6
+status/claimed:
+    name: status/claimed
+    color: fef2c0
+status/confirmed:
+    name: status/confirmed
+    color: c2e0c6
+status/failing-ci:
+    name: status/failing-ci
+    color: "888888"
+    description: Indicates that the PR in its current state fails the test suite
+status/more-info-needed:
+    name: status/more-info-needed
+    color: C6A49A
+status/needs-attention:
+    name: status/needs-attention
+    color: e11d21
+    description: Calls for a collective discussion during a review session
+status/needs-vendoring:
+    name: status/needs-vendoring
+    color: bfdadc
+version/1.0:
+    name: version/1.0
+    color: ededed
+version/1.1:
+    name: version/1.1
+    color: ededed
+version/1.2:
+    name: version/1.2
+    color: ededed
+version/1.3:
+    name: version/1.3
+    color: ededed
+version/1.4:
+    name: version/1.4
+    color: ededed
+version/1.5:
+    name: version/1.5
+    color: ededed
+version/1.6:
+    name: version/1.6
+    color: ededed
+version/1.7:
+    name: version/1.7
+    color: ededed
+version/1.8:
+    name: version/1.8
+    color: ededed
+version/1.9:
+    name: version/1.9
+    color: ededed
+version/1.10:
+    name: version/1.10
+    color: ededed
+version/1.11:
+    name: version/1.11
+    color: ededed
+version/1.12:
+    name: version/1.12
+    color: ededed
+version/1.13:
+    name: version/1.13
+    color: ededed
+version/17.03:
+    name: version/17.03
+    color: ededed
+version/17.04:
+    name: version/17.04
+    color: ededed
+version/17.05:
+    name: version/17.05
+    color: ededed
+version/17.06:
+    name: version/17.06
+    color: ededed
+version/17.07:
+    name: version/17.07
+    color: ededed
+version/17.09:
+    name: version/17.09
+    color: ededed
+version/17.10:
+    name: version/17.10
+    color: ededed
+version/17.11:
+    name: version/17.11
+    color: ededed
+version/17.12:
+    name: version/17.12
+    color: ededed
+version/18.01:
+    name: version/18.01
+    color: ededed
+version/18.02:
+    name: version/18.02
+    color: ededed
+    description: ""
+version/18.03:
+    name: version/18.03
+    color: eeeeee
+    description: ""
+version/18.04:
+    name: version/18.04
+    color: eeeeee
+    description: ""
+version/18.05:
+    name: version/18.05
+    color: ededed
+    description: ""
+version/18.06:
+    name: version/18.06
+    color: ededed
+    description: ""
+version/18.09:
+    name: version/18.09
+    color: ededed
+    description: ""
+version/19.03:
+    name: version/19.03
+    color: ededed
+    description: ""
+version/20.10:
+    name: version/20.10
+    color: ededed
+    description: ""
+version/23.0:
+    name: version/23.0
+    color: ededed
+    description: ""
+version/24.0:
+    name: version/24.0
+    color: ededed
+    description: ""
+version/master:
+    name: version/master
+    color: ededed
+version/unsupported:
+    name: version/unsupported
+    color: ededed
