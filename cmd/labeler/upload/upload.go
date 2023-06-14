@@ -45,9 +45,9 @@ func New() *cli.Command {
 				return errors.New("wrong number of arguments, expected single <file>")
 			}
 
-			token, ok := os.LookupEnv("GITHUB_TOKEN")
+			token, ok := os.LookupEnv("LABELER_TOKEN")
 			if !ok {
-				return errors.New("GitHub Token not found")
+				return errors.New("GitHub Token (env = LABELER_TOKEN) not found")
 			}
 
 			ts := oauth2.StaticTokenSource(
@@ -73,7 +73,7 @@ func New() *cli.Command {
 			for name, label := range lbls {
 				slog.Info("processing label", "label_name", name, "label.color", label.Color)
 
-				err = uploadLabel(ctx.Context, client, "shanduur", "cluster-api-provider-pve", label)
+				err = uploadLabel(ctx.Context, client, owner, repo, label)
 				if err != nil {
 					return fmt.Errorf("unable to update label: %w", err)
 				}
@@ -89,6 +89,11 @@ func uploadLabel(ctx context.Context, client *github.Client, owner, repo string,
 
 	if client == nil {
 		return errors.New("client is nil")
+	}
+
+	err := label.Validate()
+	if err != nil {
+		return fmt.Errorf("lablel validation failed: %w", err)
 	}
 
 	// first, check if label exist
