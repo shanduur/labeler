@@ -18,7 +18,7 @@ var (
 	testLabelDescription = "Test label. 🚧"
 
 	testOwner = "shanduur"
-	testRepo  = "labelmgr"
+	testRepo  = "labeler"
 )
 
 func TestNew(t *testing.T) {}
@@ -39,6 +39,17 @@ func TestPostLabel(t *testing.T) {
 			Label: labels.Label{
 				Name:        testLabelName,
 				Color:       testLabelColor,
+				Description: &testLabelDescription,
+			},
+			Owner:    testOwner,
+			Repo:     testRepo,
+			Cassette: govcr.NewCassetteLoader(fixtures),
+		},
+		{
+			Name: "with_prefix",
+			Label: labels.Label{
+				Name:        testLabelName,
+				Color:       "#" + testLabelColor,
 				Description: &testLabelDescription,
 			},
 			Owner:    testOwner,

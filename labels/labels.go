@@ -2,6 +2,7 @@ package labels
 
 import (
 	"errors"
+	"strings"
 
 	"github.com/google/go-github/v53/github"
 )
@@ -17,7 +18,7 @@ func (l *Label) Validate() error {
 		return errors.New("name is empty")
 	}
 
-	if len(l.Color) != 6 {
+	if len(l.Color) < 3 || len(l.Color) > 7 {
 		return errors.New("color is empty")
 	}
 
@@ -25,9 +26,14 @@ func (l *Label) Validate() error {
 }
 
 func (l *Label) ToGitHub() *github.Label {
+	color := l.Color
+	if strings.HasPrefix(l.Color, "#") {
+		color = strings.TrimPrefix(color, "#")
+	}
+
 	return &github.Label{
 		Name:        &l.Name,
-		Color:       &l.Color,
+		Color:       &color,
 		Description: l.Description,
 	}
 }
