@@ -1,0 +1,84 @@
+---
+version: 2
+interactions:
+    - id: 0
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: api.github.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/vnd.github.v3+json
+            User-Agent:
+                - go-github/v53.2.0
+            X-Github-Api-Version:
+                - "2022-11-28"
+        url: https://api.github.com/repos/shanduur/labeler/labels
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: "[{\"id\":5620482248,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwHAyA\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/%C2%AF%5C_(%E3%83%84)_/%C2%AF\",\"name\":\"¯\\\\_(ツ)_/¯\",\"color\":\"f9d0c4\",\"default\":false,\"description\":\"¯\\\\\\\\\\\\_(ツ)_/¯\"},{\"id\":5802328028,\"node_id\":\"LA_kwDOJvbfvM8AAAABWdh_3A\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/api\",\"name\":\"api\",\"color\":\"6f42c1\",\"default\":false,\"description\":\"Issues related to the GitHub API\"},{\"id\":5620440564,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEd9A\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/bug\",\"name\":\"bug\",\"color\":\"d73a4a\",\"default\":true,\"description\":\"Something isn't working as expected\"},{\"id\":5620440911,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEfTw\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/critical\",\"name\":\"critical\",\"color\":\"e00808\",\"default\":false,\"description\":\"Critical issue that requires immediate attention\"},{\"id\":5620440447,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEdfw\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/documentation\",\"name\":\"documentation\",\"color\":\"007bc7\",\"default\":true,\"description\":\"Issues related to documentation\"},{\"id\":5620440594,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEeEg\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/duplicate\",\"name\":\"duplicate\",\"color\":\"cfd3d7\",\"default\":true,\"description\":\"Issue already reported or duplicated\"},{\"id\":5620440859,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEfGw\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/enhancement\",\"name\":\"enhancement\",\"color\":\"0dd8ac\",\"default\":true,\"description\":\"New feature or improvement request\"},{\"id\":5620440647,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEeRw\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/feature-request\",\"name\":\"feature-request\",\"color\":\"61dafb\",\"default\":false,\"description\":\"Request for a new feature or enhancement\"},{\"id\":5620440552,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEd6A\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/feedback\",\"name\":\"feedback\",\"color\":\"d4c5f9\",\"default\":false,\"description\":\"Feedback or suggestions for improvement\"},{\"id\":5620440753,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEesQ\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/hacktoberfest\",\"name\":\"hacktoberfest\",\"color\":\"ff6b00\",\"default\":false,\"description\":\"Issues related to the Hacktoberfest event\"},{\"id\":5620440477,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEdnQ\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/help-wanted\",\"name\":\"help-wanted\",\"color\":\"7057ff\",\"default\":false,\"description\":\"Contribution opportunities available\"},{\"id\":5620440534,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEd1g\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/high-priority\",\"name\":\"high-priority\",\"color\":\"ff7b72\",\"default\":false,\"description\":\"Issue with high priority\"},{\"id\":5620440375,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEdNw\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/in-progress\",\"name\":\"in-progress\",\"color\":\"2a8b9d\",\"default\":false,\"description\":\"Issue currently being worked on\"},{\"id\":5620440493,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEdrQ\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/invalid\",\"name\":\"invalid\",\"color\":\"e4e669\",\"default\":true,\"description\":\"Issue is no longer valid or applicable\"},{\"id\":5620440713,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEeiQ\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/low-priority\",\"name\":\"low-priority\",\"color\":\"8c8c8c\",\"default\":false,\"description\":\"Issue with low priority\"},{\"id\":5620440683,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEeaw\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/question\",\"name\":\"question\",\"color\":\"ffb000\",\"default\":true,\"description\":\"Questions or need for further clarification\"},{\"id\":5620440953,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEfeQ\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/resolved\",\"name\":\"resolved\",\"color\":\"28a745\",\"default\":false,\"description\":\"Issue has been resolved\"},{\"id\":5802355538,\"node_id\":\"LA_kwDOJvbfvM8AAAABWdjrUg\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/test\",\"name\":\"test\",\"color\":\"ffffff\",\"default\":false,\"description\":\"Test label. \U0001F6A7\"},{\"id\":5620440403,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEdUw\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/testing\",\"name\":\"testing\",\"color\":\"36bcef\",\"default\":false,\"description\":\"Issues related to testing or test cases\"},{\"id\":5620440626,\"node_id\":\"LA_kwDOJvbfvM8AAAABTwEeMg\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/wontfix\",\"name\":\"wontfix\",\"color\":\"a2eeef\",\"default\":true,\"description\":\"Issue won't be fixed or addressed\"}]"
+        headers:
+            Accept-Ranges:
+                - bytes
+            Access-Control-Allow-Origin:
+                - '*'
+            Access-Control-Expose-Headers:
+                - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+            Cache-Control:
+                - public, max-age=60, s-maxage=60
+            Content-Security-Policy:
+                - default-src 'none'
+            Content-Type:
+                - application/json; charset=utf-8
+            Date:
+                - Wed, 02 Aug 2023 13:43:43 GMT
+            Etag:
+                - W/"be0d474032c1bbe2906fdd688f473a71a24fca33cdc83df80b95d0b91792a3f9"
+            Referrer-Policy:
+                - origin-when-cross-origin, strict-origin-when-cross-origin
+            Server:
+                - GitHub.com
+            Strict-Transport-Security:
+                - max-age=31536000; includeSubdomains; preload
+            Vary:
+                - Accept, Accept-Encoding, Accept, X-Requested-With
+            X-Content-Type-Options:
+                - nosniff
+            X-Frame-Options:
+                - deny
+            X-Github-Api-Version-Selected:
+                - "2022-11-28"
+            X-Github-Media-Type:
+                - github.v3; format=json
+            X-Github-Request-Id:
+                - 2535:19BD:A79D138:A90A032:64CA5D8E
+            X-Ratelimit-Limit:
+                - "60"
+            X-Ratelimit-Remaining:
+                - "24"
+            X-Ratelimit-Reset:
+                - "1690984355"
+            X-Ratelimit-Resource:
+                - core
+            X-Ratelimit-Used:
+                - "36"
+            X-Xss-Protection:
+                - "0"
+        status: 200 OK
+        code: 200
+        duration: 280.315416ms

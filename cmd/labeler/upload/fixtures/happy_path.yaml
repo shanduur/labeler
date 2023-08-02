@@ -1,0 +1,91 @@
+---
+version: 2
+interactions:
+    - id: 0
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: api.github.com
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers:
+            Accept:
+                - application/vnd.github.v3+json
+            User-Agent:
+                - go-github/v53.2.0
+            X-Github-Api-Version:
+                - "2022-11-28"
+        url: https://api.github.com/repos/shanduur/labeler/labels/test
+        method: GET
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: "{\"id\":5802355538,\"node_id\":\"LA_kwDOJvbfvM8AAAABWdjrUg\",\"url\":\"https://api.github.com/repos/shanduur/labeler/labels/test\",\"name\":\"test\",\"color\":\"ffffff\",\"default\":false,\"description\":\"Test label. \U0001F6A7\"}"
+        headers:
+            Access-Control-Allow-Origin:
+                - '*'
+            Access-Control-Expose-Headers:
+                - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+            Cache-Control:
+                - private, max-age=60, s-maxage=60
+            Content-Security-Policy:
+                - default-src 'none'
+            Content-Type:
+                - application/json; charset=utf-8
+            Date:
+                - Wed, 02 Aug 2023 13:52:32 GMT
+            Etag:
+                - W/"fdf3e7ef5bcd6cfc936c121ba50eb22dab29696dc9627a0b4e475c6874005f84"
+            Github-Authentication-Token-Expiration:
+                - 2023-08-31 07:53:25 UTC
+            Last-Modified:
+                - Wed, 02 Aug 2023 13:14:00 GMT
+            Referrer-Policy:
+                - origin-when-cross-origin, strict-origin-when-cross-origin
+            Server:
+                - GitHub.com
+            Strict-Transport-Security:
+                - max-age=31536000; includeSubdomains; preload
+            Vary:
+                - Accept, Authorization, Cookie, X-GitHub-OTP
+                - Accept-Encoding, Accept, X-Requested-With
+            X-Accepted-Oauth-Scopes:
+                - repo
+            X-Content-Type-Options:
+                - nosniff
+            X-Frame-Options:
+                - deny
+            X-Github-Api-Version-Selected:
+                - "2022-11-28"
+            X-Github-Media-Type:
+                - github.v3; format=json
+            X-Github-Request-Id:
+                - 2577:C189:AEAB4A:AFEC33:64CA5F9F
+            X-Oauth-Scopes:
+                - repo
+            X-Ratelimit-Limit:
+                - "5000"
+            X-Ratelimit-Remaining:
+                - "4998"
+            X-Ratelimit-Reset:
+                - "1690987951"
+            X-Ratelimit-Resource:
+                - core
+            X-Ratelimit-Used:
+                - "2"
+            X-Xss-Protection:
+                - "0"
+        status: 200 OK
+        code: 200
+        duration: 338.760125ms

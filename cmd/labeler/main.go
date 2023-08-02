@@ -10,7 +10,7 @@ import (
 	"golang.org/x/exp/slog"
 )
 
-var app = &cli.App{
+var app = &cli.Command{
 	Commands: []*cli.Command{
 		upload.New(),
 		download.New(),
@@ -24,7 +24,7 @@ func init() {
 }
 
 func main() {
-	err := app.RunContext(context.TODO(), os.Args)
+	err := app.Run(context.TODO(), os.Args)
 
 	if err != nil {
 		slog.Error(err.Error())

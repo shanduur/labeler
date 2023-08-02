@@ -2,16 +2,34 @@ package upload
 
 import (
 	"context"
+	"net/http"
+	"os"
+	"path"
 	"testing"
 
 	"github.com/google/go-github/v53/github"
-	"github.com/seborama/govcr/v13"
 	"github.com/shanduur/labeler/labels"
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+	"golang.org/x/oauth2"
+	"gopkg.in/dnaeon/go-vcr.v3/recorder"
 )
 
+func init() {
+	token, ok := os.LookupEnv("LABELER_TOKEN")
+	if ok {
+		transport = oauth2.NewClient(context.TODO(), oauth2.StaticTokenSource(
+			&oauth2.Token{AccessToken: token},
+		)).Transport
+		recorderMode = recorder.ModeRecordOnly
+	}
+}
+
 var (
-	fixtures = "test/fixtures.json"
+	recorderMode                   = recorder.ModeRecordOnce
+	transport    http.RoundTripper = nil
+
+	fixtures = "fixtures"
 
 	testLabelName        = "test"
 	testLabelColor       = "ffffff"
@@ -31,7 +49,6 @@ func TestPostLabel(t *testing.T) {
 		Owner         string
 		Repo          string
 		Label         labels.Label
-		Cassette      *govcr.CassetteLoader
 		ExpectedError error
 	}{
 		{
@@ -41,9 +58,8 @@ func TestPostLabel(t *testing.T) {
 				Color:       testLabelColor,
 				Description: &testLabelDescription,
 			},
-			Owner:    testOwner,
-			Repo:     testRepo,
-			Cassette: govcr.NewCassetteLoader(fixtures),
+			Owner: testOwner,
+			Repo:  testRepo,
 		},
 		{
 			Name: "with_prefix",
@@ -52,9 +68,8 @@ func TestPostLabel(t *testing.T) {
 				Color:       "#" + testLabelColor,
 				Description: &testLabelDescription,
 			},
-			Owner:    testOwner,
-			Repo:     testRepo,
-			Cassette: govcr.NewCassetteLoader(fixtures),
+			Owner: testOwner,
+			Repo:  testRepo,
 		},
 	} {
 		t.Run(tc.Name, func(t *testing.T) {
@@ -63,10 +78,19 @@ func TestPostLabel(t *testing.T) {
 
 			ctx := context.Background()
 
-			client := github.NewClient(govcr.NewVCR(tc.Cassette).HTTPClient())
+			r, err := recorder.NewWithOptions(&recorder.Options{
+				CassetteName:  path.Join(fixtures, tc.Name),
+				Mode:          recorderMode,
+				RealTransport: transport,
+			})
+			require.NoError(t, err)
 
-			err := uploadLabel(ctx, client, tc.Owner, tc.Repo, tc.Label)
-			assert.ErrorIs(t, tc.ExpectedError, err)
+			defer r.Stop() //nolint:errcheck
+
+			client := github.NewClient(r.GetDefaultClient())
+
+			err = uploadLabel(ctx, client, tc.Owner, tc.Repo, tc.Label)
+			assert.ErrorIs(t, err, tc.ExpectedError)
 		})
 	}
 }

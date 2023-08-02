@@ -8,12 +8,12 @@ import (
 	"testing"
 
 	"github.com/google/go-github/v53/github"
-	"github.com/seborama/govcr/v13"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"gopkg.in/dnaeon/go-vcr.v3/recorder"
 )
 
-var fixtures = "test/fixtures.json"
+var fixtures = "fixtures"
 
 func TestNew(t *testing.T) {
 	t.Parallel()
@@ -89,18 +89,17 @@ func TestListAll(t *testing.T) {
 	t.Parallel()
 
 	for _, tc := range []struct {
-		Name           string
-		Owner          string
-		Repo           string
-		Cassette       *govcr.CassetteLoader
-		ExpectedLabels []*github.Label
-		ExpectedError  error
+		Name                string
+		Owner               string
+		Repo                string
+		ExpectedLabelsCount int
+		ExpectedError       error
 	}{
 		{
-			Name:     "happy_path",
-			Owner:    "test",
-			Repo:     "test",
-			Cassette: govcr.NewCassetteLoader(fixtures),
+			Name:                "happy_path",
+			Owner:               "shanduur",
+			Repo:                "labeler",
+			ExpectedLabelsCount: 20,
 		},
 	} {
 		t.Run(tc.Name, func(t *testing.T) {
@@ -109,12 +108,17 @@ func TestListAll(t *testing.T) {
 
 			ctx := context.Background()
 
-			client := github.NewClient(govcr.NewVCR(tc.Cassette).HTTPClient())
+			r, err := recorder.New(path.Join(fixtures, tc.Name))
+			require.NoError(t, err)
+
+			defer r.Stop() //nolint:errcheck
+
+			client := github.NewClient(r.GetDefaultClient())
 
 			labelList, err := listAll(ctx, client, tc.Owner, tc.Repo)
-			assert.ErrorIs(t, tc.ExpectedError, err)
+			assert.ErrorIs(t, err, tc.ExpectedError)
 			if tc.ExpectedError == nil {
-				assert.Equal(t, tc.ExpectedLabels, labelList)
+				assert.Equal(t, tc.ExpectedLabelsCount, len(labelList))
 			}
 		})
 	}
@@ -162,7 +166,8 @@ func TestSave(t *testing.T) {
 			require.NoError(t, err)
 			tmpDir = path.Join(tmpDir, tc.Name)
 
-			os.Mkdir(tmpDir, tc.Permissions)
+			err = os.Mkdir(tmpDir, tc.Permissions)
+			require.NoError(t, err)
 
 			defer func() {
 				err := os.RemoveAll(tmpDir)
