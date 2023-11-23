@@ -63,15 +63,15 @@ func New() *cli.Command {
 				return fmt.Errorf("unable to open file: %w", err)
 			}
 
-			lbls := make(labels.Labels)
+			var lbls labels.Labels
 
 			err = yaml.NewDecoder(f).Decode(&lbls)
 			if err != nil {
 				return fmt.Errorf("unable to decode file: %w", err)
 			}
 
-			for name, label := range lbls {
-				slog.Info("processing label", "label_name", name, "label.color", label.Color)
+			for _, label := range lbls {
+				slog.Info("processing label", "label_name", label.Name, "label.color", label.Color)
 
 				err = uploadLabel(ctx.Context, client, owner, repo, label)
 				if err != nil {

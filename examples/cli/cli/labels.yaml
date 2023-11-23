@@ -1,144 +1,180 @@
-accessibility:
-    name: accessibility
-    color: 9ce9f4
-    description: ""
-actions:
-    name: actions
-    color: f9e98b
-    description: ""
-auth:
-    name: auth
-    color: 00517a
-    description: related to tokens, authentication state, or oauth
-blocked:
-    name: blocked
-    color: ff5451
-    description: ""
-bug:
-    name: bug
-    color: d73a4a
-    description: Something isn't working
-checks:
-    name: checks
-    color: 0e92d3
-    description: ""
-codespaces:
-    name: codespaces
-    color: DFA997
-    description: ""
-config:
-    name: config
-    color: f98d75
-    description: ""
-core:
-    name: core
-    color: e25944
-    description: This issue is not accepting PRs from outside contributors
-dependencies:
-    name: dependencies
-    color: 0366d6
-    description: Pull requests that update a dependency file
-discuss:
-    name: discuss
-    color: C9DC07
-    description: Feature changes that require discussion primarily among the GitHub CLI team
-docs:
-    name: docs
-    color: 6cafc9
-    description: ""
-enhancement:
-    name: enhancement
-    color: 0dd8ac
-    description: a request to improve CLI
-extension idea:
-    name: extension idea
-    color: 257FDD
-    description: An idea that could make a good GitHub CLI extension
-extensions:
-    name: extensions
-    color: DAB5B8
-    description: ""
-external:
-    name: external
-    color: 2700AF
-    description: pull request originating outside of the CLI core team
-feedback:
-    name: feedback
-    color: d4c5f9
-    description: ""
-github_actions:
-    name: github_actions
-    color: "000000"
-    description: Pull requests that update GitHub Actions code
-go:
-    name: go
-    color: 16e2e2
-    description: Pull requests that update Go code
-good first issue:
-    name: good first issue
-    color: d0f9a4
-    description: ""
-hackday:
-    name: hackday
-    color: 3ed1ac
-    description: PRs that came out of a Hack Day
-hacktoberfest-accepted:
-    name: hacktoberfest-accepted
-    color: D93F0B
-    description: ""
-help wanted:
-    name: help wanted
-    color: 98f9f0
-    description: Contributions welcome
-linux:
-    name: linux
-    color: 3eddb8
-    description: ""
-needs-design:
-    name: needs-design
-    color: 2db0bf
-    description: An engineering task needs design to proceed
-needs-investigation:
-    name: needs-investigation
-    color: d45bd8
-    description: CLI team needs to investigate
-needs-triage:
-    name: needs-triage
-    color: D6393F
-    description: needs to be reviewed
-needs-user-input:
-    name: needs-user-input
-    color: 830eb5
-    description: ""
-p1:
-    name: p1
-    color: e00808
-    description: Affects a large population and inhibits work
-p2:
-    name: p2
-    color: FFA501
-    description: Affects more than a few users but doesn't prevent core functions
-p3:
-    name: p3
-    color: eded04
-    description: Affects a small number of users or is largely cosmetic
-packaging:
-    name: packaging
-    color: 56efa8
-    description: ""
-platform:
-    name: platform
-    color: 6E4A8E
-    description: Problems with the GitHub platform rather than the CLI client
-tech debt:
-    name: tech debt
-    color: c9f26a
-    description: A chore that addresses technical debt
-tracking issue:
-    name: tracking issue
-    color: ffa8da
-    description: ""
-windows:
-    name: windows
-    color: "0258e2"
-    description: ""
+- name: config
+  color: f98d75
+  description: ""
+- name: gh-codespace
+  color: 373A15
+  description: relating to the gh codespace command
+- name: gh-gist
+  color: 7C8651
+  description: relating to the gh gist command
+- name: gh-ruleset
+  color: BAD70C
+  description: relating to the gh ruleset command
+- name: tech-debt
+  color: c9f26a
+  description: A chore that addresses technical debt
+- name: gh-completion
+  color: 77223B
+  description: relating to the gh completion command
+- name: gh-help
+  color: 1C2917
+  description: relating to the gh help command
+- name: discuss
+  color: C9DC07
+  description: Feature changes that require discussion primarily among the GitHub CLI team
+- name: gh-api
+  color: 92486D
+  description: relating to the gh api command
+- name: gh-extension
+  color: 50145A
+  description: relating to the gh extension command
+- name: gh-workflow
+  color: 09630E
+  description: relating to the gh workflow command
+- name: project
+  color: 23C12F
+  description: ""
+- name: needs-triage
+  color: D6393F
+  description: needs to be reviewed
+- name: accessibility
+  color: 9ce9f4
+  description: ""
+- name: core
+  color: e25944
+  description: This issue is not accepting PRs from outside contributors
+- name: extension-idea
+  color: 257FDD
+  description: An idea that could make a good GitHub CLI extension
+- name: gh-cache
+  color: 969D60
+  description: relating to the gh cache command
+- name: gh-org
+  color: 48009B
+  description: relating to the gh org command
+- name: gh-search
+  color: C2825C
+  description: relating to the gh search command
+- name: gh-status
+  color: 0DD095
+  description: relating to the gh status command
+- name: needs-design
+  color: 2db0bf
+  description: An engineering task needs design to proceed
+- name: platform
+  color: 6E4A8E
+  description: Problems with the GitHub platform rather than the CLI client
+- name: blocked
+  color: ff5451
+  description: ""
+- name: good first issue
+  color: d0f9a4
+  description: ""
+- name: gh-variable
+  color: 47D124
+  description: relating to the gh variable command
+- name: p3
+  color: eded04
+  description: Affects a small number of users or is largely cosmetic
+- name: windows
+  color: "0258e2"
+  description: ""
+- name: dependencies
+  color: 0366d6
+  description: Pull requests that update a dependency file
+- name: extensions
+  color: DAB5B8
+  description: ""
+- name: gh-project
+  color: d93f0b
+  description: relating to the gh project command
+- name: needs-user-input
+  color: 830eb5
+  description: ""
+- name: packaging
+  color: 56efa8
+  description: ""
+- name: actions
+  color: f9e98b
+  description: ""
+- name: gh-secret
+  color: FCD15D
+  description: relating to the gh secret command
+- name: needs-investigation
+  color: d45bd8
+  description: CLI team needs to investigate
+- name: cli.github.com
+  color: A4DEDC
+  description: ""
+- name: external
+  color: 2700AF
+  description: pull request originating outside of the CLI core team
+- name: gh-issue
+  color: "430568"
+  description: relating to the gh issue command
+- name: gh-ssh-key
+  color: 32B90C
+  description: relating to the gh ssh-key command
+- name: go
+  color: 16e2e2
+  description: Pull requests that update Go code
+- name: p2
+  color: FFA501
+  description: Affects more than a few users but doesn't prevent core functions
+- name: auth
+  color: 00517a
+  description: related to tokens, authentication state, or oauth
+- name: github_actions
+  color: "000000"
+  description: Pull requests that update GitHub Actions code
+- name: p1
+  color: e00808
+  description: Affects a large population and inhibits work
+- name: docs
+  color: 6cafc9
+  description: ""
+- name: gh-alias
+  color: 0052cc
+  description: related to the gh alias command
+- name: gh-gpg-key
+  color: 4892F0
+  description: relating to the gh gpg-key command
+- name: gh-label
+  color: E6691F
+  description: relating to the gh label command
+- name: feedback
+  color: d4c5f9
+  description: ""
+- name: gh-browse
+  color: 3595BB
+  description: relating to the gh browse command
+- name: gh-config
+  color: A86333
+  description: relating to the gh config command
+- name: gh-pr
+  color: DD04FD
+  description: relating to the gh pr command
+- name: gh-run
+  color: 1B818A
+  description: relating to the gh run command
+- name: bug
+  color: d73a4a
+  description: Something isn't working
+- name: enhancement
+  color: 0dd8ac
+  description: a request to improve CLI
+- name: gh-auth
+  color: 9A3D69
+  description: relating to the gh auth command
+- name: gh-repo
+  color: d4c5f9
+  description: relating to the gh repo command
+- name: help wanted
+  color: 98f9f0
+  description: Contributions welcome
+- name: codespaces
+  color: DFA997
+  description: ""
+- name: gh-release
+  color: B242E9
+  description: relating to the gh release command

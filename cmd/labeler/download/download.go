@@ -112,7 +112,7 @@ func listAll(ctx context.Context, client *github.Client, owner, repo string) ([]
 func toYAML(ghl []*github.Label) ([]byte, error) {
 	slog.Debug("transforming to YAML")
 
-	lbl := make(labels.Labels)
+	lbl := make(labels.LabelsMap)
 
 	for _, l := range ghl {
 		name := l.GetName()
@@ -132,7 +132,7 @@ func toYAML(ghl []*github.Label) ([]byte, error) {
 
 	slog.Debug("transforming to YAML complete")
 
-	out, err := yaml.Marshal(lbl)
+	out, err := yaml.Marshal(lbl.ToSlice())
 	if err != nil {
 		return nil, fmt.Errorf("unable to marshall YAML: %w", err)
 	}

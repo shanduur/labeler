@@ -38,4 +38,26 @@ func (l *Label) ToGitHub() *github.Label {
 	}
 }
 
-type Labels map[string]Label
+type Labels []Label
+
+func (ls Labels) ToMap() LabelsMap {
+	lm := make(LabelsMap)
+
+	for _, l := range ls {
+		lm[l.Name] = l
+	}
+
+	return lm
+}
+
+type LabelsMap map[string]Label
+
+func (lm LabelsMap) ToSlice() Labels {
+	ls := Labels{}
+
+	for _, l := range lm {
+		ls = append(ls, l)
+	}
+
+	return ls
+}
