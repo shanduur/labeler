@@ -24,4 +24,4 @@ jobs:
     - run: go install github.com/shanduur/labeler/cmd/labeler@main
     - run: labeler upload --owner ${{ env.OWNER }} --repo ${{ env.REPO }} ./.github/labels.yaml
       env:
-        LABELER_TOKEN: ${{ secrets.LABELER_TOKEN }}
+        LABELER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
