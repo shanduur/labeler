@@ -14,3 +14,4 @@ updates:
       include: "scope"
     labels:
       - "high-priority"
+      - "dependency"

@@ -7,6 +7,9 @@
 - name: high-priority
   color: ff7b72
   description: Issue with high priority
+- name: dependency
+  color: ff7b72
+  description: Dependency updates
 - name: question
   color: ffb000
   description: Questions or need for further clarification
