@@ -8,7 +8,7 @@
   color: ff7b72
   description: Issue with high priority
 - name: dependency
-  color: ff7b72
+  color: dadada
   description: Dependency updates
 - name: question
   color: ffb000
