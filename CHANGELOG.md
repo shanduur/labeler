@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/shanduur/labeler/compare/v1.0.0...v1.0.1) (2023-12-12)
+
+
+### Bug Fixes
+
+* **deps:** bump github.com/urfave/cli/v3 ([#8](https://github.com/shanduur/labeler/issues/8)) ([c2fbb0a](https://github.com/shanduur/labeler/commit/c2fbb0a7f56325fbd111858dafadff3b953a18c7))
+* **deps:** bump golang.org/x/oauth2 from 0.14.0 to 0.15.0 ([#5](https://github.com/shanduur/labeler/issues/5)) ([5d8a922](https://github.com/shanduur/labeler/commit/5d8a92258602c8f8ce3e080030bd0506fc32a57d))
+
 ## 1.0.0 (2023-11-23)
 
 
