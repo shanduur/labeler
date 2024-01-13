@@ -28,6 +28,7 @@ var (
 func New() *cli.Command {
 	return &cli.Command{
 		Name:    "download",
+		Usage:   "Download and print GitHub repository labels to a file",
 		Aliases: []string{"d", "dl"},
 		Flags: []cli.Flag{
 			flagOutput,

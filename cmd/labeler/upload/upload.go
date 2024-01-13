@@ -34,6 +34,7 @@ var (
 func New() *cli.Command {
 	return &cli.Command{
 		Name:      "upload",
+		Usage:     "Sync labels from a file to a GitHub repository",
 		Aliases:   []string{"u", "up"},
 		ArgsUsage: "<file>",
 		Flags: []cli.Flag{

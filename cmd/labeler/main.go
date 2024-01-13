@@ -11,6 +11,7 @@ import (
 )
 
 var app = &cli.Command{
+	Usage: "Declarative GitHub label syncing tool",
 	Commands: []*cli.Command{
 		upload.New(),
 		download.New(),
