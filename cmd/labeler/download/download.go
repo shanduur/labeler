@@ -32,18 +32,18 @@ func New() *cli.Command {
 		Flags: []cli.Flag{
 			flagOutput,
 		},
-		Action: func(ctx *cli.Context) error {
-			if ctx.Args().Len() == 0 {
+		Action: func(ctx context.Context, cmd *cli.Command) error {
+			if cmd.Args().Len() == 0 {
 				return errors.New("nothing to do")
 			}
 
 			client := github.NewClient(nil)
 
-			for i := 0; i < ctx.NArg(); i++ {
-				ghPath := ctx.Args().Get(i)
+			for i := 0; i < cmd.NArg(); i++ {
+				ghPath := cmd.Args().Get(i)
 				owner, repo := getOwnerRepo(ghPath)
 
-				l, err := listAll(ctx.Context, client, owner, repo)
+				l, err := listAll(ctx, client, owner, repo)
 				if err != nil {
 					return fmt.Errorf("unable to list all: %w", err)
 				}

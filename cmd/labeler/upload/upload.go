@@ -40,8 +40,8 @@ func New() *cli.Command {
 			flagOwner,
 			flagRepo,
 		},
-		Action: func(ctx *cli.Context) error {
-			if ctx.Args().Len() != 1 {
+		Action: func(ctx context.Context, cmd *cli.Command) error {
+			if cmd.Args().Len() != 1 {
 				return errors.New("wrong number of arguments, expected single <file>")
 			}
 
@@ -54,11 +54,11 @@ func New() *cli.Command {
 				&oauth2.Token{AccessToken: token},
 			)
 
-			tc := oauth2.NewClient(ctx.Context, ts)
+			tc := oauth2.NewClient(ctx, ts)
 
 			client := github.NewClient(tc)
 
-			f, err := os.Open(ctx.Args().First())
+			f, err := os.Open(cmd.Args().First())
 			if err != nil {
 				return fmt.Errorf("unable to open file: %w", err)
 			}
@@ -73,7 +73,7 @@ func New() *cli.Command {
 			for _, label := range lbls {
 				slog.Info("processing label", "label_name", label.Name, "label.color", label.Color)
 
-				err = uploadLabel(ctx.Context, client, owner, repo, label)
+				err = uploadLabel(ctx, client, owner, repo, label)
 				if err != nil {
 					return fmt.Errorf("unable to update label: %w", err)
 				}
