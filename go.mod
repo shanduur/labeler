@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/google/go-github/v53 v53.2.0
 	github.com/stretchr/testify v1.8.4
-	github.com/urfave/cli/v3 v3.0.0-alpha7
+	github.com/urfave/cli/v3 v3.0.0-alpha8
 	golang.org/x/exp v0.0.0-20230801115018-d63ba01acd4b
 	golang.org/x/net v0.20.0
 	golang.org/x/oauth2 v0.16.0
