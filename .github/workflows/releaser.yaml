@@ -1,9 +1,6 @@
 name: goreleaser
 
 on:
-  create:
-    tags:
-      - "v*"
   push:
     tags:
       - "v*"
