@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.2](https://github.com/shanduur/labeler/compare/v1.0.1...v1.0.2) (2024-03-05)
+
+
+### Bug Fixes
+
+* **deps:** bump github.com/stretchr/testify from 1.8.4 to 1.9.0 ([#20](https://github.com/shanduur/labeler/issues/20)) ([a955786](https://github.com/shanduur/labeler/commit/a95578614c9d6945a0aec8a5c8223549eb488c85))
+* **deps:** bump golang.org/x/net from 0.21.0 to 0.22.0 ([#19](https://github.com/shanduur/labeler/issues/19)) ([517a4f0](https://github.com/shanduur/labeler/commit/517a4f0e74f15b014eb5e709be642d5174803ea4))
+* **deps:** bump golang.org/x/oauth2 from 0.16.0 to 0.17.0 ([#16](https://github.com/shanduur/labeler/issues/16)) ([abd3e18](https://github.com/shanduur/labeler/commit/abd3e1802766fa9319ee39db90f7a11ed094ee28))
+
 ## [1.0.1](https://github.com/shanduur/labeler/compare/v1.0.0...v1.0.1) (2024-01-13)
 
 
