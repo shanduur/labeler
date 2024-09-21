@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.5](https://github.com/shanduur/labeler/compare/v1.0.4...v1.0.5) (2024-09-21)
+
+
+### Bug Fixes
+
+* **deps:** bump golang.org/x/net from 0.27.0 to 0.28.0 ([#33](https://github.com/shanduur/labeler/issues/33)) ([ce9b0e0](https://github.com/shanduur/labeler/commit/ce9b0e0827f9d40c55e79bb6b8bd21f5ac2d871f))
+* **deps:** bump golang.org/x/net from 0.28.0 to 0.29.0 ([#35](https://github.com/shanduur/labeler/issues/35)) ([6a0111a](https://github.com/shanduur/labeler/commit/6a0111adb10909b0317fd11958e9d2e65b4a7dbb))
+* **deps:** bump golang.org/x/oauth2 from 0.22.0 to 0.23.0 ([#36](https://github.com/shanduur/labeler/issues/36)) ([cc487ca](https://github.com/shanduur/labeler/commit/cc487caf21dd30cdd72f3bcaf9f2ab7118cf63d4))
+
 ## [1.0.4](https://github.com/shanduur/labeler/compare/v1.0.3...v1.0.4) (2024-08-06)
 
 
