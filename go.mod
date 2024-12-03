@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/google/go-github/v53 v53.2.0
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 	github.com/urfave/cli/v3 v3.0.0-alpha9
 	golang.org/x/exp v0.0.0-20230801115018-d63ba01acd4b
 	golang.org/x/net v0.31.0
