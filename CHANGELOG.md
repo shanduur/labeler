@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/shanduur/labeler/compare/v1.0.6...v1.0.7) (2024-12-03)
+
+
+### Bug Fixes
+
+* **deps:** bump github.com/stretchr/testify from 1.9.0 to 1.10.0 ([#44](https://github.com/shanduur/labeler/issues/44)) ([a841dfa](https://github.com/shanduur/labeler/commit/a841dfa550e6ed8d4261f14eb65da1e3db762306))
+
 ## [1.0.6](https://github.com/shanduur/labeler/compare/v1.0.5...v1.0.6) (2024-11-12)
 
 
